@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element</title>
+</head>
+<body>
+    <h1>HTML Elements</h1>
+    A HTML element is everythong from start tag to closing tag.
+    <br>
+    &lt;a&gt; + element content +&lt;/a&gt; is an element
+    <br>
+    &lt;a&gt; and &lt;(opening)&gt;(closing) are tags
+    <br>
+    They can be nested i.e. elements can contain other elements
+
+	<br>
+
+	There are 6 different type of elements:
+	<ul>
+		<li>Void element</li>
+		<ul>
+			<li>Elemnts those which do not have any contents</li>
+			<li>have no closing tag</li>
+			<li>elements:</li>
+			<ul>
+				<li>&lt;area&gt;</li>
+				<li>&lt;base&gt;</li>
+				<li>&lt;br&gt;</li>
+				<li>&lt;col&gt;</li>
+				<li>&lt;embed&gt;</li>
+				<li>&lt;hr&gt;</li>
+				<li>&lt;img&gt;</li>
+				<li>&lt;input&gt;</li>
+				<li>&lt;link&gt;</li>
+				<li>&lt;meta&gt;</li>
+				<li>&lt;source&gt;</li>
+				<li>&lt;track&gt;</li>
+				<li>&lt;wbr&gt;</li>
+			</ul>
+
+		</ul>
+		<li>Template element</li>
+		<li>raw text element</li>
+		<ul>
+			<li>special html elements where the contents are treated as literal text, not parsed as HTML</li>
+			<li>not able to create new elements inside these elements</li>
+			<li>The contents insde must not content any texts that has &lt;/ followed by the tag name that matches the tag followed by whitespaceor > or / >  </li>
+			<li>for ex;</li>
+			<ul>
+				<li>&lt;script&gt; &lt;/SCRIPT&gt; &lt;/script&gt;</li>
+				<li>&lt;script&gt; &lt;/script&gt; &lt;/script&gt;</li>
+				<li>&lt;script&gt; &lt;/script &gt; &lt;/script&gt;</li>
+			</ul>
+			<li>Because the browser will treat that as the end of the element and everything after it will break.</li>
+			<li>elements:</li>
+			<ul>
+				<li>&lt;style&gt;</li>
+				<li>&lt;script&gt;</li>
+			</ul>
+		</ul>
+		<li>escapalble element</li>
+		<ul>
+			<li>
+				Their text conetnt can include HTML character regerences liek &amp; or &lt; <br>
+				<textarea>&amp; is used for ampersand</textarea>
+			</li>
+		</ul>
+		<li>foreign element</li>
+		<ul>
+			<li>Elements from the MathML namespace and the SVG namespace.</li>
+		</ul>
+		<li>normal element</li>
+		<ul>
+			<li>All other allowed HTML elements are normal elements.</li>
+		</ul>
+	</ul>
+
+
+    <br>
+    <br>
+
+	<h1>HTML attributes</h1>
+
+	<ul>
+		<li>All HTML elements can have attributes</li>
+		<li>They provide more information about elements</li>
+		<li>they are always sepcified in starting tag.</li>
+		<li>example src="..." href="..."</li>
+		<li>elements have their own attributes</li>
+	</ul>
+	<h3>some attributes example</h3>
+	<img src="https://www.cranfield-colours.co.uk/wp-content/uploads/2022/01/cranfield-traditional-etching-ink-mid-black-400x221.jpg" height="200" width="200" alt="blackiamge" />
+	<br>
+	<ul>
+		<li>The above image is using element:<br> &lt;img src="image_url" height="200" width="200" alt="blackimage" /&gt;</li>
+		<li>Where for the img tag we need to provide an URL which can be absolute or relative.</li>
+		<li>The attritubes of an element can depend on the element it self.</li>
+	</ul>
+	
+	
+	
+
+</body>
+</html>
