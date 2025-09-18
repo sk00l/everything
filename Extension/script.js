@@ -101,13 +101,6 @@ function getDomAndScan() {
         }
     }
 
-    // lines.forEach(line => {
-    //     dangerousSinks.forEach(sink => {
-    //         if (line.includes(sink)) {
-    //             results += line + ` ⚠️ [Dangerous: ${sink}]\n`;
-    //         }
-    //     });
-    // });
 
     return results || "No dangerous sinks found.";
 }
