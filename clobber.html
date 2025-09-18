@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a id="defaultAvatar"><a id="defaultAvatar" name="avatar" href="//14.rs"></a></a>
+
+    <script>
+        comment = "aaa"
+        let defaultAvatar = window.defaultAvatar || {avatar: '/resources/images/avatarDefault.svg'}
+        let avatarImgHTML = '<img class="avatar" src="' + (comment.avatar ? escapeHTML(comment.avatar) : defaultAvatar.avatar) + '">';
+
+        let divImgContainer = document.createElement("div");
+        divImgContainer.innerHTML = avatarImgHTML
+
+    </script>
+</body>
+</html>

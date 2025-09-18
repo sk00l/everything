@@ -1,0 +1,53 @@
+*{
+    background-color: transparent;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+#ul1{
+    color:green;
+}
+
+.ul1{
+    color:red
+}
+
+
+a[href]{
+    color:green;
+}
+
+a[href="#internal"]{
+    color:red;
+}
+
+a[href~=ello]{
+    color:blue      
+}
+
+a[href|=hello]{
+    color: aqua;
+}
+
+a[href^=https]{
+    color: aquamarine;
+}
+
+a[href$=ve]{
+    color: gold;
+}
+
+a[href*=anar]{
+    color: silver;
+}
+
+a[href=doodle s]{
+    color: orange;
+}
+
+a[href=doodle i]{
+    color: orange;
+}

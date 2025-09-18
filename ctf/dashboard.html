@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.6/purify.min.js" integrity="sha512-YlctBG9PGZIhh9keoqI3eZkQM9T8QUbiBi7qNYAO/TUEo8jqWX5pLp5+x1cKRQDRzJ/lyGyJ9WUVNIRduxIIFw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>TRYY ME</h2>
+    <div id="DOM">DOM DOM DOM</div>
+    
+    <script>
+        const urlparameters = new URLSearchParams(window.location.search);
+        
+        for (var [key, value] of urlparameters) {
+            if (document.getElementById(key)) {
+                document.getElementById(key).innerText = `${value}`;
+            }
+            else if (window.SKOOL) {
+                document.write(`${key} = ${value} <br>`);
+            }
+            else {
+                key = DOMPurify.sanitize(key);
+                document.write(`<div style='color: red'>${key} not found in the document</div   ><br>`);
+            }
+        }
+    </script>
+</body>
+
+</html>

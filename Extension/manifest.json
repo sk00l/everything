@@ -1,0 +1,14 @@
+{
+  "name": "Dangerous Sinks Scanner",
+  "version": "1.0.0",
+  "description": "sacnnnnnnn",
+  "manifest_version": 3,
+  "author": "sk00l",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ]
+}
