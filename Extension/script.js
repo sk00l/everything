@@ -1,15 +1,3 @@
-// function scanSinks() {
-//     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-//         chrome.scripting.executeScript({
-//             target: { tabId: tabs[0].id },
-//             function: getDomAndScan
-//         }, function (results) {
-//             if (results && results[0]) {
-//                 document.getElementById("scan-results").textContent = results[0].result || "No dangerous sinks found.";
-//             }
-//         });
-//     });
-// }
 
 
 async function tabInject(){
